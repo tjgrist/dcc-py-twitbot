@@ -1,7 +1,7 @@
 Twitter Bot Keys
 
-	Consumer Key (Api Key):  esGwNiJl84PfJ3iSOyZW2gZP6
-	Consumer Secret (Api secret): 1Da2Y4eMZF0yygdhbakIr18fndUFZ7YN9JmeuHXbFYTmoTjQri
+	Consumer Key (Api Key):  NzTwJIJgUD8MBQs4PTk6QNxJJ
+	Consumer Secret (Api secret): yFLttkh5etKPvNpjgtANQLgMxKL2nlrxuy1Me0fFb5wTXoLCpz
 
 	Access Token: 3738462499-G4a0qwLY42Sk6Ypn0plwQRIKd12NGxSbQ6m3Ym0
 	Access Token Secret: QIFvDvkSZl8kqZ3qUFJSUpaDivjZVPmC4XeDf8Sr37Icr
