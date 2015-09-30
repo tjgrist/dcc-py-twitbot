@@ -20,7 +20,7 @@ api = tweepy.API(auth)
 
 while True:
     
-    trends1 = api.trends_place(2379574) #WOE id for chicago
+    trends1 = api.trends_place(2379574) #WOE id for Chicago
     hashtags = [x['name'] for x in trends1[0]['trends'] if x['name'].startswith('#')]
 
     trend_hashtag = hashtags[0]
@@ -45,8 +45,7 @@ while True:
 		m = "@{0}, {1} {2}".format(sn, message,trend_hashtag) 
 		print m
 		#print '\r\n'
-		s = api.update_status(m, tweet.id)
-		
+		s = api.update_status(status=m, in_reply_to_status_id = tweet.id)
 		
 		TimeToSleep = randint(120,360)
 		time.sleep(TimeToSleep)#Tweet every 2-4 minutes
