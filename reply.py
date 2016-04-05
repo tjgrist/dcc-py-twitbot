@@ -7,10 +7,10 @@ from datetime import datetime,timedelta
 from random import randint
  
  
-CONSUMER_KEY = keys['25Nt1PmV9hzJYIJa1Qa3DgB1x']
-CONSUMER_SECRET = keys['Eswziu1rAoPGYHEyehpP4eBtCYn9iG3EIhMKlsoRzgwS8BHyT7']
-ACCESS_TOKEN = keys['717132551702315008-WP3X6WoL5Qg6sSDAu3s04ZpJ2drGNi5']
-ACCESS_TOKEN_SECRET = keys['NPnnt3tsY37L30fpJCyCR8jSJSHV2TUHzO01TltEb0OHm']
+CONSUMER_KEY = keys['consumer_key']
+CONSUMER_SECRET = keys['consumer_secret']
+ACCESS_TOKEN = keys['access_token']
+ACCESS_TOKEN_SECRET = keys['access_token_secret']
 argfile = str("liners.txt")
  
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -40,15 +40,15 @@ while True:
     for tweet in tweetSearchResults:
 		#print tweet
 		#print '\r\n'
-		sn = tweet.user.screen_name
-		message = f[randint(0,len(f)-1)] 
-		m = "@{0}, {1} {2}".format(sn, message,trend_hashtag) 
-		print m
+        sn = tweet.user.screen_name
+        message = f[randint(0,len(f)-1)] 
+        m = "@{0}, {1} {2}".format(sn, message,trend_hashtag) 
+        print(m)
 		#print '\r\n'
-		s = api.update_status(status=m, in_reply_to_status_id = tweet.id)
+        s = api.update_status(status=m, in_reply_to_status_id = tweet.id)
 		
-		TimeToSleep = randint(120,360)
-		time.sleep(TimeToSleep)#Tweet every 2-4 minutes
+        TimeToSleep = randint(120,360)
+        time.sleep(TimeToSleep)#Tweet every 2-4 minutes
     
 	
     TimeToSleep = randint(3600,4000)#wait 10-20 minutes to look for a new topic
