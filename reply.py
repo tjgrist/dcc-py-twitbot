@@ -7,10 +7,10 @@ from datetime import datetime,timedelta
 from random import randint
  
  
-CONSUMER_KEY = keys['consumer_key']
-CONSUMER_SECRET = keys['consumer_secret']
-ACCESS_TOKEN = keys['access_token']
-ACCESS_TOKEN_SECRET = keys['access_token_secret']
+CONSUMER_KEY = keys['25Nt1PmV9hzJYIJa1Qa3DgB1x']
+CONSUMER_SECRET = keys['Eswziu1rAoPGYHEyehpP4eBtCYn9iG3EIhMKlsoRzgwS8BHyT7']
+ACCESS_TOKEN = keys['717132551702315008-WP3X6WoL5Qg6sSDAu3s04ZpJ2drGNi5']
+ACCESS_TOKEN_SECRET = keys['NPnnt3tsY37L30fpJCyCR8jSJSHV2TUHzO01TltEb0OHm']
 argfile = str("liners.txt")
  
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
